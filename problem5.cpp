@@ -18,7 +18,7 @@ int main() {
         case '*':
             result = a * b;
         break;
-        default : a/b;
+        default : result  = a/b;
          
     }
 
