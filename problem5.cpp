@@ -1,29 +1,19 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 int main() {
-    double a, b;
-    char c;
-    cin >> a >> b >> c;
 
-    double result;
     
-    switch (c) {
-        case '+':
-            result = a + b;
-        break;
-        case '-':
-            result = a - b;
-        break;
-        case '*':
-            result = a * b;
-        break;
-        default : result  = a/b;
-         
-    }
+    double a,b;
 
+    char c;
+    cin >> a >> c >> b;
 
-    cout << result << endl;
+   if (c=='+') cout << a+b;
+   else if(c=='-') cout << a-b;
+
+   else if(c=='*') cout << a*b;
+   else cout << a/b;
 
     return 0;
 }
